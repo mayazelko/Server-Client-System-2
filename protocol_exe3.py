@@ -7,7 +7,7 @@ def get_port():
     print(first)
     if first:
         first = False
-        return '10.0.0.18', 8820
+        return '_____', 8820
     ip = socket.gethostbyname(socket.gethostname())
     for port in range(65535):
         try:
@@ -18,7 +18,6 @@ def get_port():
             return ip, port
         except:
             pass
-            # return '10.0.0.18', 8820
 
 
 def create_msg(data):
