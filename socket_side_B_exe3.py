@@ -1,7 +1,7 @@
 import socket
 import protocol_exe3
 
-# IP = '10.0.0.18'
+# IP = '____' # Your IP is here
 # port = 8820
 first = True
 server_socket = None
@@ -17,10 +17,10 @@ def main():
                 my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 ip, port = protocol_exe3.get_port()
                 if port:
-                    my_socket.connect(('10.0.0.18', port))
+                    my_socket.connect(('____', port))
                 else:
                     port = 8820
-                    my_socket.connect(('10.0.0.18', port))
+                    my_socket.connect(('____', port))
 
             global server_socket
             global firstt
@@ -76,7 +76,7 @@ def main():
 
                     ###
                     my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                    my_socket.connect(("10.0.0.18", int(port)))
+                    my_socket.connect(("___", int(port)))
                     print("Side B is connecting to port: ", port)
                     break
                     ###
