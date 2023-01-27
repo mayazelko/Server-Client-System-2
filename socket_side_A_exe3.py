@@ -1,7 +1,7 @@
 import socket
 import protocol_exe3
 
-IP = '10.0.0.28'
+IP = '____' # Your IP is here
 first = True
 firstt = True
 
@@ -43,7 +43,7 @@ def main():
 
                     ###
                     my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                    my_socket.connect(('10.0.0.28', int(port)))
+                    my_socket.connect(('_____', int(port)))
                     print("Side A connecting to port: ", port)
                     break
                     ###
